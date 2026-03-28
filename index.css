@@ -1,139 +1,267 @@
-/* ── VARIABLES Y BASE (INDEX) ── */
-:root {
-  --bg: #0a0a0c; --bg2: #111116; --bg3: #18181f;
-  --accent: #00e5ff; --accent2: #ff6b35;
-  --text: #e8e8ec; --muted: #7a7a8a; --border: rgba(255,255,255,0.07);
-  --font-display: 'Syne', sans-serif; --font-mono: 'JetBrains Mono', monospace;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduardo Gómez — Automatización & Desarrollo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+<nav>
+  <a href="index.html" class="nav-logo">EG<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre mí</a></li>
+    <li><a href="#habilidades">Habilidades</a></li>
+    <li><a href="#proyectos-dest">Proyectos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="proyectos.html">Portfolio →</a></li>
+  </ul>
+</nav>
 
-body {
-  background: var(--bg); color: var(--text);
-  font-family: var(--font-mono); font-size: 15px; line-height: 1.7; overflow-x: hidden;
-}
+<section id="hero">
+  <div class="hero-grid-line"></div>
+  <div class="hero-content">
+    <div class="hero-tag fade-in">Disponible para nuevas oportunidades</div>
+    <h1 class="fade-in delay-1">Eduardo<br><span class="line2">Gómez</span></h1>
+    <p class="hero-subtitle fade-in delay-2">
+      <strong>Automatización & Robótica Industrial</strong> · PLC, SCADA, Python.<br>
+      Conectando el mundo físico con el digital — desde un autómata hasta una aplicación con IA.
+    </p>
+    <div class="hero-buttons fade-in delay-3">
+      <a href="proyectos.html" class="btn-primary">Ver proyectos →</a>
+      <a href="Recursos/Curriculum_Eduardo_Gomez.pdf" class="btn-secondary" download>Descargar CV</a>
+    </div>
+    <div class="hero-stats fade-in delay-4">
+      <div class="stat-item">
+        <span class="stat-number">2+</span>
+        <span class="stat-label">años experiencia</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">proyectos</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">3</span>
+        <span class="stat-label">idiomas</span>
+      </div>
+    </div>
+  </div>
+<div class="hero-visual fade-in delay-2">
+    <div class="photo-frame">
+      <div class="photo-placeholder">
+        <img src="Recursos/FotoKevin.png" alt="Foto de Eduardo Gómez">
+      </div>
+    </div>
+  </div>
+</section>
+      </div>
+      <div class="photo-corner tl"></div>
+      <div class="photo-corner tr"></div>
+      <div class="photo-corner bl"></div>
+      <div class="photo-corner br"></div>
+    </div>
+  </div>
+</section>
 
-body::before {
-  content: ''; position: fixed; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
-  pointer-events: none; z-index: 0; opacity: 0.6;
-}
+<section id="sobre">
+  <div class="section-tag">Trayectoria</div>
+  <h2>La escalera<br>que me trajo aquí</h2>
 
-/* ── NAVEGACIÓN Y FOOTER ── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex;
-  align-items: center; justify-content: space-between; padding: 1.2rem 4rem;
-  background: rgba(10,10,12,0.85); backdrop-filter: blur(16px); border-bottom: 0.5px solid var(--border);
-}
-.nav-logo { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; color: var(--text); text-decoration: none; }
-.nav-logo span { color: var(--accent); }
-.nav-links { display: flex; gap: 2.5rem; list-style: none; }
-.nav-links a { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; }
-.nav-links a:hover { color: var(--accent); }
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-step">Paso 01</div>
+      <div class="timeline-title">El técnico</div>
+      <div class="timeline-desc">Mantenimiento industrial, planos eléctricos, sensores, neumática e hidráulica. Aprendí a entender las máquinas por dentro.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-step">Paso 02</div>
+      <div class="timeline-title">El automatizador</div>
+      <div class="timeline-desc">PLCs con TIA Portal, SCADA, WinCC, LabVIEW, robots UR. Empecé a programar las máquinas que antes solo mantenía.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-step">Paso 03</div>
+      <div class="timeline-title">El desarrollador</div>
+      <div class="timeline-desc">Python, Node-RED, HTML/CSS, SQL. El software como puente entre la industria y el mundo digital.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-step">Paso 04</div>
+      <div class="timeline-title">El integrador</div>
+      <div class="timeline-desc">Visión artificial, reconocimiento de personas, IA aplicada a la industria. Donde estoy llegando ahora.</div>
+    </div>
+  </div>
 
-footer {
-  padding: 2rem 4rem; border-top: 0.5px solid var(--border); display: flex;
-  justify-content: space-between; align-items: center; font-size: 0.68rem;
-  color: var(--muted); letter-spacing: 0.08em; position: relative; z-index: 1;
-}
+  <p class="sobre-text">
+    Soy técnico en <strong>Automatización y Robótica Industrial</strong> con una obsesión sana: nunca doy nada por perfecto. Siempre veo cómo mejorar lo que ya funciona. Mi camino empezó en ingeniería de software, pero pronto necesité ver el impacto de lo que construía. Un autómata que mueve una línea de producción, un PLC que toma decisiones en tiempo real — eso es tangible. Hoy busco un rol híbrido donde pueda estar tanto en el arranque de una máquina como detrás de un editor de código.
+  </p>
+</section>
 
-/* ── COMPONENTES GLOBALES ── */
-h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.8rem, 5vw, 4.5rem); line-height: 1.0; margin-bottom: 1rem; }
-h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.8rem, 3vw, 2.8rem); margin-bottom: 3rem; line-height: 1.1; }
-.section-tag { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
-.section-tag::before { content: ''; width: 24px; height: 0.5px; background: var(--accent); }
-section { padding: 6rem 4rem; position: relative; z-index: 1; }
+<section id="habilidades">
+  <div class="section-tag">Stack técnico</div>
+  <h2>Habilidades</h2>
 
-/* ── HERO ── */
-#hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 0 4rem; padding-top: 5rem; gap: 4rem; }
-.hero-grid-line { position: absolute; inset: 0; background-image: linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
-.hero-content, .hero-visual { position: relative; z-index: 1; }
-.hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); border: 0.5px solid rgba(0,229,255,0.3); padding: 0.35rem 0.85rem; border-radius: 2px; margin-bottom: 2rem; }
-.hero-tag::before { content: ''; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
-h1 .line2 { color: transparent; -webkit-text-stroke: 1px rgba(232,232,236,0.35); }
-.hero-subtitle { font-size: 0.85rem; color: var(--muted); max-width: 420px; margin-bottom: 2.5rem; line-height: 1.8; }
-.hero-subtitle strong { color: var(--text); font-weight: 500; }
-.hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn-primary, .btn-secondary { display: inline-flex; align-items: center; padding: 0.8rem 1.8rem; font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.2s; }
-.btn-primary { background: var(--accent); color: #000; font-weight: 500; }
-.btn-primary:hover { background: #fff; transform: translateY(-2px); }
-.btn-secondary { background: transparent; color: var(--text); border: 0.5px solid var(--border); }
-.btn-secondary:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
-.hero-visual { display: flex; justify-content: center; align-items: center; }
-.photo-frame { position: relative; width: 320px; height: 380px; }
-.photo-frame::before { content: ''; position: absolute; top: 16px; left: 16px; right: -16px; bottom: -16px; border: 0.5px solid rgba(0,229,255,0.25); border-radius: 4px; }
-.photo-placeholder { width: 100%; height: 100%; background: var(--bg3); border: 0.5px solid var(--border); border-radius: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; color: var(--muted); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; overflow: hidden; position: relative; }
-.hero-stats { display: flex; gap: 2rem; margin-top: 2.5rem; }
-.stat-item { display: flex; flex-direction: column; gap: 0.2rem; }
-.stat-number { font-family: var(--font-display); font-size: 1.8rem; font-weight: 800; color: var(--accent); line-height: 1; }
-.stat-label { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  <div class="skills-grid">
+    <div class="skill-column automation">
+      <div class="skill-col-title">
+        <div class="skill-col-icon icon-auto">⚙️</div>
+        Automatización Industrial
+      </div>
+      <div class="skill-list">
+        <div class="skill-item">
+          <span class="skill-name">TIA Portal / PLC</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">SCADA / WinCC</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">LabVIEW</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Robótica UR</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Planos eléctricos</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Mecánica</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+    </div>
 
-/* ── SOBRE MÍ ── */
-#sobre { background: var(--bg2); border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
-.timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; margin-bottom: 3rem; }
-.timeline::before { content: ''; position: absolute; top: 28px; left: 0; right: 0; height: 0.5px; background: linear-gradient(90deg, var(--accent) 0%, rgba(0,229,255,0.1) 100%); }
-.timeline-item { padding: 0 1.5rem; position: relative; }
-.timeline-dot { width: 10px; height: 10px; border: 2px solid var(--accent); border-radius: 50%; background: var(--bg2); margin-bottom: 1.5rem; position: relative; z-index: 1; transition: background 0.2s; }
-.timeline-item:hover .timeline-dot { background: var(--accent); }
-.timeline-step { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem; }
-.timeline-title { font-family: var(--font-display); font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem; }
-.timeline-desc, .sobre-text { font-size: 0.75rem; color: var(--muted); line-height: 1.7; }
-.sobre-text { max-width: 680px; font-size: 0.875rem; line-height: 1.9; }
 
-/* ── HABILIDADES ── */
-.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-.skill-column { background: var(--bg2); border: 0.5px solid var(--border); border-radius: 4px; padding: 2rem; position: relative; overflow: hidden; transition: border-color 0.3s; }
-.skill-column:hover { border-color: rgba(0,229,255,0.25); }
-.skill-column::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--accent), transparent); }
-.skill-column.software::before { background: linear-gradient(90deg, var(--accent2), transparent); }
-.skill-col-title { font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
-.skill-col-icon { width: 28px; height: 28px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 14px; }
-.icon-auto { background: rgba(0,229,255,0.1); } .icon-sw { background: rgba(255,107,53,0.1); }
-.skill-list { display: flex; flex-direction: column; gap: 0.75rem; }
-.skill-item { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.skill-name { font-size: 0.78rem; color: var(--text); }
-.skill-bar-track { flex: 1; height: 2px; background: var(--border); border-radius: 2px; overflow: hidden; }
-.skill-bar-fill { height: 100%; background: var(--accent); border-radius: 2px; transform-origin: left; animation: barGrow 1s ease-out forwards; transform: scaleX(0); }
-.skill-column.software .skill-bar-fill { background: var(--accent2); }
 
-/* ── PROYECTOS DESTACADOS ── */
-#proyectos-dest { background: var(--bg2); border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
-.cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2.5rem; }
-.project-card { background: var(--bg3); border: 0.5px solid var(--border); border-radius: 4px; overflow: hidden; transition: all 0.3s; display: flex; flex-direction: column; text-decoration: none; color: inherit; position: relative; }
-.project-card:hover { border-color: rgba(0,229,255,0.3); transform: translateY(-4px); }
-.card-thumb { height: 160px; background: var(--bg); display: flex; align-items: center; justify-content: center; border-bottom: 0.5px solid var(--border); font-size: 2.5rem; position: relative; }
-.card-thumb::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,229,255,0.05), transparent); }
-.card-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
-.card-title { font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; }
-.card-desc { font-size: 0.73rem; color: var(--muted); line-height: 1.7; flex: 1; }
-.card-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: auto; }
-.tag { font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; border: 0.5px solid var(--border); border-radius: 2px; color: var(--muted); }
-.card-arrow { position: absolute; top: 1rem; right: 1rem; font-size: 0.8rem; opacity: 0; transition: all 0.2s; color: var(--accent); }
-.project-card:hover .card-arrow { opacity: 1; transform: translate(2px, -2px); }
-.view-all { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); text-decoration: none; border-bottom: 0.5px solid rgba(0,229,255,0.3); padding-bottom: 2px; transition: gap 0.2s; }
-.view-all:hover { gap: 0.9rem; }
+    <div class="skill-column software">
+      <div class="skill-col-title">
+        <div class="skill-col-icon icon-sw">💻</div>
+        Desarrollo de Software
+      </div>
+      <div class="skill-list">
+        <div class="skill-item">
+          <span class="skill-name">Python</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Node-RED</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:55%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">HTML5 / CSS3</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">SQL</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Salesforce CRM</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Visión artificial (CV2)</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:45%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-/* ── CONTACTO ── */
-#contacto { text-align: center; }
-.contact-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2.5rem; }
-.contact-link { display: flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; background: var(--bg2); border: 0.5px solid var(--border); border-radius: 4px; text-decoration: none; color: var(--text); font-size: 0.78rem; transition: all 0.2s; }
-.contact-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+<section id="proyectos-dest">
+  <div class="section-tag">Trabajo seleccionado</div>
+  <h2>Proyectos<br>destacados</h2>
 
-/* ── ANIMACIONES Y RESPONSIVE ── */
-.fade-in { opacity: 0; transform: translateY(20px); animation: fadeUp 0.7s ease forwards; }
-@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
-@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
-@keyframes barGrow { to { transform: scaleX(1); } }
-.delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.25s; } .delay-3 { animation-delay: 0.4s; } .delay-4 { animation-delay: 0.55s; }
+  <div class="cards-grid">
+    <a href="proyectos.html" class="project-card">
+      <div class="card-thumb">
+        <img src="Recursos/Ur_Tia_portal.png" alt="Comunicación Robot UR">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Comunicación Robot UR</div>
+        <div class="card-desc">Integración y comunicación con robot Universal Robots. Programación de movimientos y protocolos de intercambio de datos.</div>
+        <div class="card-tags">
+          <span class="tag">UR Script</span>
+          <span class="tag">TIA Portal</span>
+          <span class="tag">Automatización</span>
+        </div>
+      </div>
+      <span class="card-arrow">↗</span>
+    </a>
 
-@media (max-width: 900px) {
-  nav { padding: 1rem 1.5rem; } .nav-links { display: none; }
-  #hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; text-align: center; }
-  .hero-visual { display: none; } .hero-subtitle { max-width: 100%; }
-  .hero-buttons, .hero-stats { justify-content: center; }
-  section { padding: 4rem 1.5rem; }
-  .timeline { grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .skills-grid, .cards-grid { grid-template-columns: 1fr; }
-  footer { flex-direction: column; gap: 0.5rem; text-align: center; }
-}
+    <a href="proyectos.html" class="project-card">
+      <div class="card-thumb">
+        <img src="Recursos/Guia_gemma_Portada.jpg" alt="GUIA GEMMA">
+      </div>
+      <div class="card-body">
+        <div class="card-title">GUIA GEMMA</div>
+        <div class="card-desc">Implementación de la metodología GEMMA para control de autómatas. Gestión de modos de marcha y parada de sistemas industriales.</div>
+        <div class="card-tags">
+          <span class="tag">TIA Portal</span>
+          <span class="tag">GEMMA</span>
+          <span class="tag">PLC</span>
+        </div>
+      </div>
+      <span class="card-arrow">↗</span>
+    </a>
+
+
+    <a href="proyectos.html" class="project-card">
+      <div class="card-thumb">
+        <img src="Recursos/Deteccion_personas_objetos.png" alt="Detector de Personas">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Detector de Personas</div>
+        <div class="card-desc">Sistema de visión artificial con Python y OpenCV para detección y reconocimiento de personas en tiempo real con cámara.</div>
+        <div class="card-tags">
+          <span class="tag">Python</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">IA</span>
+        </div>
+      </div>
+      <span class="card-arrow">↗</span>
+    </a>
+  </div>
+
+  <a href="proyectos.html" class="view-all">Ver todos los proyectos →</a>
+</section>
+
+<section id="contacto">
+  <div class="section-tag">Hablemos</div>
+  <h2>¿Tienes un proyecto<br>o una oferta?</h2>
+  <p style="color:var(--muted);font-size:0.85rem;max-width:420px;margin:0 auto;">
+    Estoy disponible para posiciones en automatización industrial, desarrollo de software o perfiles híbridos. Escríbeme.
+  </p>
+
+  <div class="contact-links">
+    <a href="mailto:kevinkevin200220@gmail.com" class="contact-link">
+      <span class="contact-icon">✉</span>
+      <span>kevinkevin200220@gmail.com</span>
+    </a>
+    <a href="https://linkedin.com/in/kevin-eduardo-gómez-patiño-ba4a7a247" target="_blank" class="contact-link">
+      <span class="contact-icon">in</span>
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com" target="_blank" class="contact-link">
+      <span class="contact-icon">⌥</span>
+      <span>GitHub</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Eduardo Gómez — Tarragona, España</span>
+  <span>Automatización & Robótica · Industria 4.0</span>
+</footer>
+
+</body>
+</html>
