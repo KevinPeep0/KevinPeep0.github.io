@@ -163,8 +163,22 @@ h1 .line2 { color: transparent; -webkit-text-stroke: 1px rgba(232,232,236,0.35);
 
 @media (max-width: 900px) {
   nav { padding: 1rem 1.5rem; } .nav-links { display: none; }
-  #hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; text-align: center; }
-  .hero-visual { display: none; } .hero-subtitle { max-width: 100%; }
+  #hero {
+    grid-template-columns: 1fr;
+    padding: 6rem 1.5rem 3rem;
+    text-align: center;
+  }
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    order: -1;
+  }
+  .photo-frame {
+    width: 200px;
+    height: 240px;
+  }
+  .hero-subtitle { max-width: 100%; }
   .hero-buttons, .hero-stats { justify-content: center; }
   section { padding: 4rem 1.5rem; }
   .timeline { grid-template-columns: 1fr 1fr; gap: 2rem; }
